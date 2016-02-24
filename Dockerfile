@@ -11,9 +11,6 @@ RUN echo 'nxt.apiServerHost=0.0.0.0' >> conf/nxt.properties
 
 # clean
 RUN rm /tmp/nxt-client.zip
-RUN find /usr/local/nxt -type f ! -name '*.exe' -delete
-RUN rm -r /usr/local/nxt/contrib
-RUN rm -r /usr/local/nxt/changelogs
 
 EXPOSE 7876
 ENTRYPOINT ["java", "-jar", "nxt.jar"]
