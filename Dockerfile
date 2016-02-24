@@ -2,7 +2,7 @@ FROM java:8-jre
 
 MAINTAINER Damien Plenard "damien+docker@plenard.me"
 
-ADD https://bitbucket.org/JeanLucPicard/nxt/downloads/nxt-client-1.6.0e.zip /tmp/nxt-client.zip
+ADD https://bitbucket.org/JeanLucPicard/nxt/downloads/nxt-client-1.7.5.zip /tmp/nxt-client.zip
 
 RUN unzip /tmp/nxt-client.zip -d /usr/local/
 WORKDIR /usr/local/nxt
